@@ -3,7 +3,7 @@ import { findCharacters, findCharacterById } from '../services/RickAndMortyAPI';
 import { useParams } from 'react-router-dom';
 
 
-const useGetCharacter = () => {
+export const useGetCharacter = () => {
     const [loading, setLoading] = useState(true);
     const [character, setCharacter] = useState({});
     const {id} = useParams()
@@ -20,7 +20,7 @@ const useGetCharacter = () => {
     )
 }
 
-const useGetCharacterList = () => {
+export const useGetCharacterList = () => {
     const [loading, setLoading] = useState(true);
     const [characters, setCharacters] = useState([]);
 
@@ -39,4 +39,3 @@ const useGetCharacterList = () => {
 
 }
 
-export default useGetCharacter; useGetCharacterList;

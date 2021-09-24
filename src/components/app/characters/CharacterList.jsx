@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 const CharacterList = ({ characters }) => (
-    <ul aria-label = "characters">
+    <ul aria-label = "characters" role="list">
         {characters.map((character) => (   
         <div key={character.id}> 
             <li>

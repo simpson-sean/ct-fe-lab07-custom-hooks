@@ -1,12 +1,12 @@
 import React from 'react';
-import useGetCharacterList from '../hooks/CharacterHooks';
+import { useGetCharacter } from '../hooks/CharacterHooks';
 import { Link } from 'react-router-dom';
 import Character from '../components/app/characters/Character';
 
 
 const RickAndMortyDetailsContainer = () => {
 
-    const {loading, character} = useGetCharacterList();
+    const {loading, character} = useGetCharacter();
 
     if(loading)return<img src="https://powerusers.microsoft.com/t5/image/serverpage/image-id/118082i204C32E01666789C?v=v2" alt="loading spinner" />
 
