@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RickAndMortyDetails display a single character 1`] = `
+<div>
+  <div
+    data-testid="testing-div"
+  >
+    <img
+      alt="Rick Sanchez"
+      src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    />
+    <h1>
+      Rick Sanchez
+    </h1>
+    <h3>
+      Alive
+    </h3>
+    <a
+      href="/"
+    >
+      Go Back
+    </a>
+  </div>
+</div>
+`;
